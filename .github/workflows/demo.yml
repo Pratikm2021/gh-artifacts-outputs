@@ -43,6 +43,6 @@ jobs:
           name: dist-files
           path: dist-files
       - name: List artifact contents
-        run: ls -R dist
+        run: ls -R dist-files
       - name: Deploy
         run: echo "Deploying..."
