@@ -50,6 +50,6 @@ jobs:
       - name: List artifact contents
         run: ls -R dist-files
       - name: Output filename
-        run: echo "The JS file is located at: ${{ needs.build.outputs.script-path }}"
+        run: 'echo "The JS file is located at: ${{ needs.build.outputs.script-path }}"'
       - name: Deploy
         run: echo "Deploying..."
